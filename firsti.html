@@ -1,0 +1,94 @@
+d<html>
+
+<head>
+   
+    <meta charset="UTF8">
+    <title>data analysing</title>
+    <style>
+        body{
+            font-family:fantasy;
+        }
+.cool{
+    color:purple;
+    font-weight:800;
+transform:translateX(35%);
+}
+   #ser{
+    color:purple;
+    font-weight:800;
+transform:translateX(40%);
+   }
+#edit{
+    border:5px solid purple;
+    height:400px;
+    width:700px;
+    padding:50px;
+    padding-left:120px;
+    padding-right:30px;
+    padding-top:120px;
+    box-sizing: border-box;
+    transform:translateX(45%);
+    text-transform: capitalize;
+    background-color: grey;
+    background-image:url(moto3.jpg);
+}
+#uniue{
+    border:2px solid purple;
+    height:40px;
+    width:85px;
+    font-weight:800;
+    font-family:fantasy;
+margin-left: 50%;
+
+}
+    </style>
+
+</head>
+<body>
+
+<h1 class ="cool" id = "uni">Random qoutes generator</h1>
+
+<div class="arena">
+    <h1 id ="ser">Qoutes Arena</h1>
+<h1 id="edit">click on generate to get new qoutes</h1>
+<button id ="uniue" onclick="qoutes2()">generate</button>
+</div>
+<script>
+
+function qoutes2(){
+var qoutes=["Live Together OR its better to die", 
+"celebrate every day as a festival",
+"life short do much as u can", 
+"today pain creates tommorow gain",
+"song lovers love peace",
+
+    "The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela",
+    "The way to get started is to quit talking and begin doing. -Walt Disney",
+    "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.-Steve Jobs",
+    "If life were predictable it would cease to be life, and be without flavor. -Eleanor Roosevelt",
+    "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.-Oprah Winfreg",
+    "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.-James Cameron",
+    "Life is what happens when you're busy making other plans.-John Lenno",
+
+    "You will face many defeats in life, but never let yourself be defeated.-Maya Angelou",
+    "The greatest glory in living lies not in never falling, but in rising every time we fall.-Nelson Mandela",
+    "In the end, it's not the years in your life that count. It's the life in your years. -Abraham Lincoln",
+    "Never let the fear of striking out keep you from playing the game. -Babe Ruth",,
+    "Life is either a daring adventure or nothing at all. -Helen Keller",
+    "Many of life's failures are people who did not realize how close they were to success when they gave up.-Thomas A. Edison",
+    "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. -Dr. Seuss"
+
+
+];
+var randg = Math.round(Math.random()*qoutes.length);
+
+ document.getElementById("edit").innerHTML=qoutes[randg];
+};
+//var target=document.getElementById("uniue");
+//target.addEventListener("click", qoutes2);
+    </script>
+</body>
+</html>
+
+
+
